@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Inline Views & Date",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Show views, relative time and the exact date after Subscribe/Join controls on YouTube.",
   "minimum_chrome_version": "111",
   "content_scripts": [

@@ -1,5 +1,6 @@
 {
   "name": "youtube-inline-views-date",
+  "version": "0.1.1",
   "private": true,
   "description": "Development tooling for the YouTube Inline Views & Date extension (not shipped).",
   "license": "MIT",

@@ -37,6 +37,10 @@ test('dates.js loads before content.js', () => {
   assert.ok(js.indexOf('dates.js') !== -1 && js.indexOf('dates.js') < js.indexOf('content.js'));
 });
 
+test('package.json version matches the extension version', () => {
+  assert.equal(JSON.parse(readSource('package.json')).version, manifest.version);
+});
+
 test('content scripts only run on YouTube', () => {
   for (const entry of entries) assert.deepEqual(entry.matches, ['https://www.youtube.com/*']);
 });
