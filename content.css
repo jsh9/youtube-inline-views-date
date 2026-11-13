@@ -1,0 +1,32 @@
+/* Put the statistics after the channel's Join / Subscribe / bell controls. */
+ytd-watch-metadata #owner {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  min-width: 0;
+}
+
+/* Let the channel area make room for the new trailing label. */
+ytd-watch-metadata #owner > ytd-video-owner-renderer {
+  min-width: 0;
+}
+
+#yt-inline-stats-extension {
+  display: inline-block;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: min(37vw, 400px);
+  margin-inline-start: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #555 !important; /* Light mode: darker than YouTube's secondary text. */
+  font: 400 12px/20px Roboto, Arial, sans-serif;
+  user-select: text;
+}
+
+/* Dark mode: a muted medium grey rather than the previous light grey. */
+html[dark] #yt-inline-stats-extension,
+ytd-app[dark] #yt-inline-stats-extension {
+  color: #858585 !important;
+}
