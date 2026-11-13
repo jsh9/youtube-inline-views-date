@@ -40,6 +40,17 @@ To install the extension manually for development or testing:
 
 After modifying the source code, click **Reload** on the extension management page and refresh YouTube to apply your changes.
 
+### 2.3. Running Tests
+
+Tests use Node's built-in test runner and [jsdom](https://github.com/jsdom/jsdom) (Node 20+):
+
+```sh
+npm install
+npm test
+```
+
+`package.json`, `node_modules/` and `test/` are development-only. Leave them out of the Chrome Web Store upload.
+
 ## 3. Screenshot
 
 ![YouTube Inline Views & Date preview](screenshots/inline-stats-preview.png)

@@ -3,12 +3,24 @@
   "name": "YouTube Inline Views & Date",
   "version": "0.1.0",
   "description": "Show views, relative time and the exact date after Subscribe/Join controls on YouTube.",
+  "minimum_chrome_version": "111",
   "content_scripts": [
     {
       "matches": [
         "https://www.youtube.com/*"
       ],
       "js": [
+        "page-data.js"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "dates.js",
         "content.js"
       ],
       "css": [
