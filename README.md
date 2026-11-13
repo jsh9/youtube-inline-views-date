@@ -19,7 +19,7 @@ For example:
 
 ### 2.1. For Users
 
-Install **YouTube Inline Views & Date** directly from the Chrome Web Store: https://chromewebstore.google.com/detail/REPLACE_WITH_EXTENSION_ID
+Install **YouTube Inline Views & Date** directly from the Chrome Web Store: https://chromewebstore.google.com/detail/londfjlephdinljdablmogmcbhfclmpn
 
 The extension works with Chromium-based browsers, including Google Chrome and Brave.
 
